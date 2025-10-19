@@ -1,0 +1,57 @@
+.anhchinh{
+    height: 300px;
+    width: auto;
+    
+}
+
+header{
+    background-color: antiquewhite;
+    display: grid;
+    justify-content: space-around;
+    justify-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
+}
+
+nav{  
+  display: flex; 
+  text-align: center;    
+  padding: 10px 0;
+  
+}
+
+div{
+    display:inline-block;
+}
+
+main>div>img{
+    width: 200px;
+    height: 150px;
+    display:grid ;
+    text-align: ;
+}
+
+main>div{
+    background-color: darkgray;
+}
+main>div>p{
+    text-align: center;
+}
+h1{
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.anh123{
+    background-color: coral;
+    display: flex;
+    justify-content: space-around;
+}
+
+main{
+    padding: 10px;
+}
+
+footer{
+    background-color: chartreuse;
+}
