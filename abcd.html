@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body{
+    border: 2px solid black;
+    height: 1000px;
+    width: 100%;
+    background-color: gray;
+}
+#main{
+    width:500px;
+    height: 350px;
+    margin: 0 auto;
+    border: 5px solid black;
+    background-color: blueviolet;
+    margin-top: 50px;
+    text-align: center;
+    
+}
+
+#main h2{
+    margin-top: 32%;
+}
+
+#image1,#image2{
+    margin-top: 100px;
+    display:flex;
+    justify-content: space-around;
+}
+
+#image1 img{
+    width: 200px;
+    height: 150px;
+    border: 6px solid black;
+}
+
+#image2 img{
+    width: 200px;
+    height: 150px;
+    border: 6px solid black;
+}
+
+  </style>
+</head>
+<body>
+  <div id="main">
+    <h2>Hover over an image below.</h3>
+  </div>
+
+  <div id="image1">
+    <img src="Img/Halong.jpg" alt="Hạ Long" tabindex="0">
+    <img src="Img/Hội An.jpg" alt="Hội An" tabindex="0">
+    <img src="Img/Bắc Ninh 2.jpg" alt="Bắc Ninh" tabindex="0">
+  </div>
+
+  <div id="image2">
+    <img src="Img/Huế.jpg" alt="Huế" tabindex="0">
+    <img src="Img/Nha Trang.jpg" alt="Nha Trang" tabindex="0">
+    <img src="Img/Cao Bằng.jpg" alt="Cao Bằng" tabindex="0">
+  </div>
+<script>
+  let main = document.getElementById("main");
+  let imgs = document.getElementsByTagName("img");
+
+  for (let img of imgs) {
+    img.onmouseover = img.onfocus = function() {
+      main.innerHTML = "<img src='" + this.src + "' style='width:500px;height:350px;object-fit:cover;'>";
+    };
+    img.onmouseout = img.onblur = function() {
+      main.innerHTML = "<h2>Hover over an image below.</h2>";
+    };
+  }
+</script>
+
+
+
+</body>
+</html>
