@@ -1,0 +1,150 @@
+body{
+    background-color: aliceblue;
+}
+body a{
+    text-decoration: none;
+    box-shadow: 0px 2px 2px 2px rgba(0, 0, 0, 0.088);
+}
+body a:hover{
+    color: green;
+}
+.anhchinh{
+    height: 300px;
+    width: 500px;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+header{
+    background-color: antiquewhite;
+    display: grid;
+    justify-content: space-around;
+    justify-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
+    margin-bottom: 30px;
+    margin-top: 10px;
+}
+
+
+nav{  
+  display: flex; 
+  width: auto;
+  height: 50px;
+  padding: 10px 0;
+}
+nav ul {
+    list-style-type: none;
+    padding:2px;
+    margin: 10px;
+    box-shadow: 0px 2px 2px 2px rgba(0, 0, 0, 0.088);
+    border-radius: 2px;
+    background-color: rgb(215, 224, 250);
+  }
+
+nav a {
+    text-decoration: none;
+    color: black; 
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+}
+nav a:hover {
+    color: green;
+}
+
+div{
+    display:inline-block;
+}
+
+/* main>div>img{
+    width: 200px;
+    height: 150px;
+    display:grid ;
+    margin: 10px;
+    border: 1px solid black;
+    border-radius: 10px;
+} */
+
+
+main>div>p{
+    text-align: center;
+}
+h1{
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.anh123{
+    border-radius: 10px;
+    background-color: coral;
+    display: flex;
+    justify-content: space-around;
+    border: 2px solid black;
+}
+.anh123>img{
+    height: 150px;
+    width: 200px;
+    margin: 10px;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+.main_1{
+    padding: 10px;
+    background-color: chocolate;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+}
+.main_1>div>a>img{
+    height: 220px;
+    width: 400px;
+    border: 1px solid black;
+    border-radius: 10px;
+    margin: 20px;
+    opacity: 0.8;
+}
+.main_1>div>img:hover{
+    opacity: 1;
+    border-radius: 0px;
+
+}
+
+.main_1>div{
+    background-color: azure;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+
+footer{
+    background-color: chartreuse;
+}
+
+main{
+    padding: 10px;
+    background-color: chocolate;
+}
+main a{
+    text-decoration: none;
+}
+main a:hover{
+    color: green;
+}
+
+.lb-image {
+  width: 1000px !important;
+  height: 400px !important;
+}
+
+
+
+
+
+
+
+
+
+
