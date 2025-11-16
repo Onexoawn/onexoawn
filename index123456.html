@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Final Project</title>
+  <style>
+    html{
+    scroll-behavior: smooth;
+}
+body {
+    background-color: #dedede;
+    padding: 5px;
+    margin: 15px;
+    font-size: 25px;
+    font-family:Arial, sans-serif;
+}
+
+h1 {
+    text-align: center;
+    font-family:Arial, sans-serif;
+    font-size: 1.95em;
+}
+
+h2{
+    text-align:center;
+  }
+
+li{
+    margin-top: 20px;
+}
+
+.label{
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.grid{
+    text-align: center;
+}
+
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  padding: 20px;
+}
+
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr; 
+  gap: 10px; 
+}
+
+figure {
+  margin: 0;
+}
+
+img {
+  width: 100%;
+  display: block;
+}
+
+
+@media (min-width: 772px) {
+  .grid {
+    grid-template-columns: 1fr 1fr; 
+  }
+
+  figure {
+    border-radius: 50%; 
+    overflow: hidden;
+  }
+
+  .grid figure:last-child {
+    grid-column: span 2;
+  }
+}
+
+
+@media (min-width: 992px) {
+
+  .grid figure:nth-child(3n) {
+    grid-column: span 2;
+  }
+
+  .grid img{
+    height:369px ;
+
+  }
+
+
+  figure {
+    border-radius: 0;
+  }
+}
+
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto; 
+  }
+}
+
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1 id="top">Introduction to Vietnam</h1>
+  </header>
+
+  <main>
+    <p>Việt Nam là một quốc gia nằm ở khu vực Đông Nam Á, thuộc bán đảo Đông Dương, có hình dáng chữ S kéo dài theo bờ biển phía Tây của Biển Đông.</p>
+    <p>Thủ đô của Việt Nam là Hà Nội, và Thành phố Hồ Chí Minh là trung tâm kinh tế lớn nhất cả nước.</p>
+
+    <p>Việt Nam là một đất nước yêu hòa bình, năng động và giàu truyền thống, đang từng ngày phát triển và hội nhập với thế giới. Câu nói “Việt Nam - đất nước con người thân thiện” thể hiện đúng tinh thần của dân tộc Việt Nam hôm nay.</p>
+    
+    <div class = "grid">
+        <figure>
+        <img src="images/Bắc Ninh 2.jpg" alt="Bắc Ninh" width="200">
+        <figcaption>Bắc Ninh</figcaption>
+        </figure>
+        <figure>
+        <img src="images/Cao Bằng.jpg" alt="Cao Bằng" width="200">
+        <figcaption>Cao Bằng</figcaption>
+        </figure>
+        <figure>
+        <img src="images/Hội An.jpg" alt="Hội An" width="200">
+        <figcaption>Hội An</figcaption>
+        </figure>
+        <figure>
+        <img src="images/Nha Trang.jpg" alt="Nha Trang" width="200">
+        <figcaption>Nha Trang</figcaption>
+        </figure>
+        <figure>
+        <img src="images/Halong2.jpg" alt="Hạ Long" width="200">
+        <figcaption>Hạ Long</figcaption>
+        </figure>
+        <figure>
+        <img src="images/Đà Lạt.jpg" alt="Đà Lạt" width="200">
+        <figcaption>Đà Lạt</figcaption>
+        </figure>
+        <figure>
+        <img src="images/Sapa.jpg" alt="Sapa" width="200">
+        <figcaption>Sapa</figcaption>
+        </figure>
+        <figure>
+        <img src="images/Hà Nội.jpg" alt="Hà Nội" width="200">
+        <figcaption>Hà Nội</figcaption>
+        </figure>
+        <figure>
+        <img src="images/Hà Giang.jpg" alt="Hà Giang" width="200">
+        <figcaption>Hà Giang</figcaption>
+        </figure>
+    </div>
+  </main>
+
+  <footer>
+    <a href="#top">Jump to the Top</a>
+  </footer>
+</body>
+
+</html>
